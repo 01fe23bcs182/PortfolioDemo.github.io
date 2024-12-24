@@ -1,5 +1,11 @@
-/* Reset default margin and padding */
+/* Reset Default Margin and Padding */
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,13 +13,13 @@
 
 /* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Arial, sans-serif; /* Added fallback font */
     background-color: #f5f5f5;
-    margin: 0;
-    padding: 20px; /* Adding padding to the body to prevent sticking at the top */
+    padding: 20px; /* Adds spacing around the body */
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Aligns content towards the top */
+    flex-wrap: wrap; /* Ensures no overlap on small screens */
     min-height: 100vh;
 }
 
@@ -26,7 +32,7 @@ section {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
-    margin-top: 30px; /* Adding margin to ensure there's space from the top */
+    margin-top: 30px;
 }
 
 /* Header */
@@ -40,7 +46,6 @@ header {
 
 header h1 {
     font-size: 2rem;
-    margin: 0;
 }
 
 header p {
@@ -56,7 +61,6 @@ h2 {
 /* List Items */
 ul {
     list-style: none;
-    padding: 0;
 }
 
 ul li {
@@ -73,8 +77,8 @@ a {
     font-weight: bold;
 }
 
-a:hover {
-    text-decoration: underline;
+a:hover, a:focus {
+    text-decoration: underline; /* Improved accessibility */
 }
 
 /* Definition List */
@@ -86,7 +90,7 @@ dl dt {
 
 dl dd {
     margin-left: 1.5rem;
-    color: #666;
+    color: #444; /* Improved contrast */
 }
 
 /* Blockquote */
@@ -107,3 +111,12 @@ blockquote {
     header {
         padding: 1.5rem;
     }
+
+    h1 {
+        font-size: 1.5rem; /* Adjust header font size */
+    }
+
+    ul li {
+        font-size: 0.9rem; /* Adjust list font size */
+    }
+}
