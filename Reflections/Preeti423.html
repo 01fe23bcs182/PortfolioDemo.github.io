@@ -1,1 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures and Algorithms Summary</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            background-color: #030303;
+            color: #212529;
+            margin: 0;
+            padding: 20px;
+        }
+       
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #fefeff;
+            background-color: #039311;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 2px solid #0f0f10;
+            padding: 10px;
+            background-color: #30da2d;
+            border-radius: 4px;
+            color: #020202;
+        }
+        h3 {
+            margin-top: 20px;
+            font-style: italic;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 15px 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        code {
+            background-color: #dfe6ed;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        p {
+            margin: 15px 0;
+        }
+        strong {
+            color: #343a40;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #d0f9bd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .note {
+            font-size: 0.9em;
+            background-color: #f8f9fa;
+            border-left: 4px solid #6da4de;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #6a7077;
+        }
+    .navbar {
+    position: sticky;
+    top: 0;
+    background-color:  #0c540e;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    justify-content: space-between;
+  }
 
+ 
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .nav-list li {
+    margin: 0;
+    color: #866545;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #FB5235;
+    align-content: center;
+    padding: 1rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-list a:hover {
+    transform: scale(1.02);  
+    background-color: #2fef2c;
+   
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 4px;
+  }
+  
+  .content {
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a style="color:rgb(255, 255, 255)"  href="/PortfolioDemo.github.io/blocks/home/home.html">Home</a></li>
+            <li><a style="color:rgb(255, 255, 255)"  href="/PortfolioDemo.github.io/index.html">PROJECT OVERVIEW</a></li>
+            <li><a  style="color:rgb(253, 251, 251)" href="/PortfolioDemo.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
+        </ul>
+    </nav>
+  <section>
+    
+        <h1>Data Structures and Algorithms </h1>
+        <div class="container">
+        <h2>1. What are the kinds of problems we see in nature?</h2>
+       <p>iteration, recursion,backtracking are the fundamental patterns that shape the natural world. understandin the patterns can help us better apperciate the complexicity and beauty of nature.</p>
+            <p><strong>Example:</strong> Evolutionary Adaptation: Evolution often involves a process of trial and error, where organisms explore different variations of traits and behaviors. If a particular variation is unsuccessful, the organism may "backtrack" and try a different approach.
+</p>
+
+    </div>
+    
+    <div class="container">
+        <h2>2. What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth</h2>
+       <p>Time complexity measures how the execution time of an algorithm scales with the input size.
+Space complexity measures the amount of memory an algorithm requires to run.
+Orders of growth provide a way to compare the efficiency of different algorithms.
+Understanding the classes of problems helps in choosing the right algorithms for different tasks.</p>
+            <p>Common orders of growth include:
+
+Constant (O(1)): The resource usage remains the same regardless of the input size.
+Logarithmic (O(log n)): The resource usage grows very slowly as the input size increases. 
+Linear (O(n)): The resource usage grows proportionally to the input size. 
+Quadratic (O(n^2)): The resource usage grows quadratically with the input size. 
+Exponential (O(2^n)): The resource usage grows exponentially with the input size."
+</p>   
+    </div>
+
+    <div class="container">
+        <h2>3. Take away from different design principles from chapter 2</h2>
+      <p>Chapter 2 emphasizes important design principles like "divide and conquer," "greedy algorithms," "dynamic programming," and "backtracking."Dived and conquer:"Make the locally optimal choice at each step, hoping that this will lead to the globally optimal solution."greedy algorithm:"This approach is particularly useful for optimization problems with overlapping subproblems, leading to significant efficiency gains compared to naive recursive solutions." back tracking:"Backtracking is a general approach for solving problems that involve making a series of choices. It can be used to find all possible solutions or to find the best solution among a set of candidates."
+
+
+ </p>
+
+
+    </div>
+
+    <div class="container">
+        <h2>4. The hierarchical data and how different tree data structures solve and optimize over the problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)</h2>
+        <h3>Ans:</h3>
+         <p>Hierarchical data can be represented and optimized using various tree data structures. Examples include binary search trees (BST), AVL trees, 2-3 trees, red-black trees, heaps, and tries. Each structure has specific advantages,such as red-black treeThe tree maintains a balanced height, ensuring that the worst-case time complexity for search, insertion, and deletion is .
+
+</p>
+
+
+    </div>
+
+    <div class="container">
+        <h2>5. The need for array query algorithms and their implications. Their applications and principles need to be discussed</h2>
+        <h3>Ans:</h3>
+       <p>"Array query algorithms are essential tools for efficiently extracting and manipulating information from arrays. They enable us to answer specific questions about the data within an array, often in a time-efficient manner.Applications are:Real time processing,Optimising performance,Data-intensive.
+
+    </div>
+
+    <div class="container">
+        <h2>6. Differentiate between tree and graphs and their traversals. The applications of each</h2>
+        <h3>Ans:</h3>
+         <p>Trees are specialized graphs with hierarchical relationships, ideal for searching, decision-making, and data representation.
+
+Graphs are versatile, handling complex relationships like cycles, connections, and paths in various domains like networks and optimization. Both have various traversal algorithms: trees use methods like pre-order, in-order, and post-order, while graphs can be traversed using depth-first search (DFS) or breadth-first search (BFS). Applications of trees include file system structures, while graphs are used in networking and social networks.</p>
+
+  
+    </div>
+     <div class="container">
+        <h2>7.Deliberate on sorting and searching algorithms, the technique behind each and their connection to the real world</h2>
+         <h3>Ans:</h3>
+         <p>Sorting algorithms like Quick Sort, Merge Sort, and Bubble Sort each have distinct advantages and disadvantages. Quick Sort is typically faster for large datasets, while Merge Sort is stable and efficient for linked lists. Searching algorithms like Binary Search and Linear Search are fundamental for data retrieval, with Binary Search being much faster for sorted data. These algorithms have applications in databases, search engines, and everyday software like e-commerce platforms.</p>
+     </div>
+       
+  </section>
+  <button onclick="window.history.back();" style="background-color: #0bb12f; color: rgb(241, 233, 233); border: none; padding: 10px 20px; font-size: 1rem; cursor: pointer; border-radius: 5px; margin-bottom: 20px;">Back</button>
+</body> 
+</html>
